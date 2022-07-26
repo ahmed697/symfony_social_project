@@ -1,0 +1,26 @@
+<h1 class="d-flex justify-content-center">Articles</h1>
+<div class="d-flex flex-wrap justify-content-around">
+{% for art in article %}
+
+
+<div class="card" style="width: 18rem;">
+  <img src="{{art.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{art.title}}</h5>
+    <p class="card-text">{{art.content}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{art.intro}}</li>
+    <li class="list-group-item">{{ art.createdAt |date('d-m-Y') }}</li>
+    <li class="list-group-item"></li>
+  </ul>
+  <div class="card-body">
+    <a href="{{ path('app_single_article', {"slug": art.slug}) }}" class="card-link">Card link</a>
+
+    <a href="#" class="card-link">Auteur: {{art.author.username}}</a>
+
+  </div>
+</div>
+
+{% endfor %}
+</div>

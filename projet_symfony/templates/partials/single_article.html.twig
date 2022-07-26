@@ -1,0 +1,16 @@
+<article class="d-flex flex-column align-items-center text-center">
+    <!-- Post header-->
+    <header class="mb-4">
+        <!-- Post title-->
+        <h1 class="fw-bolder mb-1">{{articles.title}}</h1>
+    </header>
+    <!-- Preview image figure-->
+    <figure class="mb-4"><img class="img-fluid rounded" src="{{articles.image}}" alt="..." /></figure>
+    <!-- Post content-->
+    <section class="mb-5">
+        <p class="fs-5 mb-4">{{articles.intro}}</p>
+        <p class="fs-5 mb-4">{{articles.content}}</p>
+        <a href="#" class="card-link">Auteur: {{article.author.username}}</a>
+        <h2 class="fw-bolder mb-4 mt-5">{{articles.createdAt |date('d-m-Y') }}</h2>
+    </section>
+</article>

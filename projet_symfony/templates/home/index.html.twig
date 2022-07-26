@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+
+		<div class="jumbotron text-center my-5 shadow">
+			<h1 class="display-4">Read And Write</h1>
+			<p class="lead">Ici vous pouvez écrire vos articles et lire ceux des autres.</p>
+			<hr class="my-4">
+			<p>Retrouvez nos derniers articles</p>
+		</div>
+
+
+
+
+
+ {# test set #}
+		{# <h2 class="text-center h1">Differents frameworks</h2>
+		<div class="row flex-lg-row flex-xl-row flex-column"></div> #}
+
+	{# </div> #}
+
+	{# CARTES BOOTSTRAP #}
+{# {% set symfony = {"name" : "symfony", "image": "https://symfony.com/logos/symfony_black_03.png" ,"content": "Symfony est un ensemble de composants PHP ainsi qu'un framework MVC 
+      libre écrit en PHP. Il fournit des fonctionnalités modulables et adaptables qui permettent 
+      de faciliter et d’accélérer le développement d'un site web.","author" : "menfou"} %}    
+{% set angular = {"name" : "angular", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/640px-Angular_full_color_logo.svg.png", "content": "angular c'est juste dur","author" : "quelqu'un trop investit"} %}    
+{% set laravel = {"name" : "laravel","image": "https://bloganueva.com/images/1567818494.jpg" , "content": "laravel un autre framework php","author" : "quelqu'un d'autre trop investit"} %}    
+{% set items = {symfony,angular,laravel} %} #}
+
+{# <div class="d-flex justify-content-center">
+{% for item in items %} #}
+
+{# <div class="card" style="width: 18rem;">
+  <img src="{{item.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+    <p class="card-text">{{item.content}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div> #}
+{# {% endfor %}
+</div> #}
+
+
+
+
+
+{% include "partials/article.html.twig" %}
+
+
+
+{% endblock %}
